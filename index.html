@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Distance Calculator</h1>
+        </div>
+    </header>
+
+    <section id="theory">
+        <div class="container">
+            <h2>Theory</h2>
+            <div class="theory-section">
+                <h3>Distance in Two Dimensions</h3>
+                <p>The distance <span class="math">\( d \)</span> between two points <span class="math">(x1, y1)</span>
+                    and <span class="math">(x2, y2)</span> in a 2D plane is calculated using the formula:</p>
+                <p><span class="math">d = sqrt{(x2 - x1)<sup>2</sup> + (y2 - y1)<sup>2</sup>}</span></p>
+
+                <h3>Distance in Three Dimensions</h3>
+                <p>The distance <span class="math">\( d \)</span> between two points <span class="math">(x1, y1,
+                        z1)</span> and <span class="math">(x2, y2, z2)</span> in a 3D space is calculated using the
+                    formula:</p>
+                <p><span class="math">d = sqrt{(x2 - x1)<sup>2</sup> + (y2 - y1)<sup>2</sup> + (z2 -
+                        z1)<sup>2</sup>}</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <div class="container">
+            <h2>Distance Calculator</h2>
+            <form id="distanceForm">
+                <label for="dimensions">Select Dimensions:</label>
+                <select id="dimensions" name="dimensions">
+                    <option value="2">2D</option>
+                    <option value="3">3D</option>
+                </select>
+
+                <div id="point1">
+                    <h3>Point 1</h3>
+                    <label for="x1">x:</label>
+                    <input type="number" id="x1" name="x1" required>
+                    <label for="y1">y:</label>
+                    <input type="number" id="y1" name="y1" required>
+                    <label for="z1" id="z1Label">z:</label>
+                    <input type="number" id="z1" name="z1">
+                </div>
+
+                <div id="point2">
+                    <h3>Point 2</h3>
+                    <label for="x2">x:</label>
+                    <input type="number" id="x2" name="x2" required>
+                    <label for="y2">y:</label>
+                    <input type="number" id="y2" name="y2" required>
+                    <label for="z2" id="z2Label">z:</label>
+                    <input type="number" id="z2" name="z2">
+                </div>
+
+                <button type="submit">Calculate Distance</button>
+            </form>
+
+            <div id="result" class="result-section">
+                <h3>Result</h3>
+                <p id="distanceResult"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Distance Calculator</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

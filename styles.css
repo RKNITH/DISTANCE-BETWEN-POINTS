@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+/* Theory section */
+#theory {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.theory-section {
+    margin-top: 20px;
+}
+
+.theory-section h3 {
+    margin-top: 20px;
+}
+
+.theory-section p {
+    margin-bottom: 10px;
+}
+
+.math {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Calculator section */
+#calculator {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+#calculator h2 {
+    margin-bottom: 20px;
+}
+
+#distanceForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#distanceForm h3 {
+    margin-top: 10px;
+}
+
+#distanceForm label {
+    grid-column: span 2;
+}
+
+#distanceForm select,
+#distanceForm input[type="number"],
+#distanceForm button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#distanceForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#distanceForm button:hover {
+    background-color: #45a049;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
